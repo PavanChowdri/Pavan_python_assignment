@@ -32,11 +32,12 @@ The **Movie collection API** is a Restful API build with Django and Django Rest 
 3. Make migration and run the project
 4. Open Postman or Thunder Client
 	
-	- User registration ( POST - http://127.0.0.1:8000/register/)
+	- **User registration** -  ( POST - http://127.0.0.1:8000/register/)
 	
 		- In the body add { "username":"", "password":"" } 
 		- The access_token : ""  and the refresh_token: "" will be generated and the access token will expires in 1 day and refresh token will expire in 2 days
-	- Getting Movie list (GET - http://127.0.0.1:8000/movies/)
+		
+	- **Getting Movie list** - (GET - http://127.0.0.1:8000/movies/)
 		
 		- Once you register in response copy the access_token, inside the Header add 
 			
@@ -54,7 +55,7 @@ The **Movie collection API** is a Restful API build with Django and Django Rest 
 			      "genres": "",
 			      "uuid": "57baf4f4-c9ef-4197-9e4f-acf04eae5b4d"
 			    },
-	- Creating Collection for user - (POST - http://127.0.0.1:8000/collection/)
+	- **Creating Collection for user** - (POST - http://127.0.0.1:8000/collection/)
 		
 		- Once you register in response copy the access_token, inside the Header add 
 		
@@ -74,7 +75,7 @@ The **Movie collection API** is a Restful API build with Django and Django Rest 
 			   }
 			 
 		- In the respone you will get the **uuid**
-	- Getting movie collection (GET - http://127.0.0.1:8000/collection/)
+	- **Getting movie collection** - (GET - http://127.0.0.1:8000/collection/)
 	
 		- Once you register in response copy the access_token, inside the Header add 
 		
@@ -108,7 +109,7 @@ The **Movie collection API** is a Restful API build with Django and Django Rest 
 				  }
 				}
 
-	- Getting movie collection of specific user (GET - http://127.0.0.1:8000/collection/<collection_uuid>/
+	- **Getting movie collection of specific user** - (GET - http://127.0.0.1:8000/collection/<collection_uuid>/
 	
 		-  Once you register in response copy the access_token, inside the Header add 
 		
@@ -144,21 +145,21 @@ The **Movie collection API** is a Restful API build with Django and Django Rest 
 				  }
 				} 
 				 
-	- Updating the specific collection  (PUT - http://127.0.0.1:8000/collection/<collection_uuid : (Hint) response of creating collection>/
+	- **Updating the specific collection**  - (PUT - http://127.0.0.1:8000/collection/<collection_uuid : (Hint) response of creating collection>/
 	
 		-  Once you register in response copy the access_token, inside the Header add 
 		
 				Authentication : Bearer <Your access token>
 			
 		- In response you will get message as ** collection updated successfully **
-	- DELETE the specific collection (DELETE - http://127.0.0.1:8000/collection/<collection_uuid : (Hint) response of creating collection>/
+	- **DELETE the specific collection** - (DELETE - http://127.0.0.1:8000/collection/<collection_uuid : (Hint) response of creating collection>/
 
 		- Once you register in response copy the access_token, inside the Header add 
 		
 				Authentication : Bearer <Your access token>
 
 		- In response you will get message as ** collection deleted successfully **
-	- Request Count ( GET - http://127.0.0.1:8000/request-count/)
+	- **Request Count**  - ( GET - http://127.0.0.1:8000/request-count/)
 	
 		-  Once you register in response copy the access_token, inside the Header add 
 		
@@ -169,14 +170,14 @@ The **Movie collection API** is a Restful API build with Django and Django Rest 
 				 "request_count":7   ## indicates that i have done 7 api request
 				 } 
 
-	- Request_count_reset(POST - http://127.0.0.1:8000/request-count/reset)
+	- **Request_count_reset** - (POST - http://127.0.0.1:8000/request-count/reset)
 	 
 		- Once you register in response copy the access_token, inside the Header add 
 		
 				Authentication : Bearer <Your access token>
 		 - In response you will get message as ** Request count reset successfullt**
 
-	- Token_refresh ( POST - http://127.0.0.1:8000/api/token/refresh/)
+	- **Token_refresh** - ( POST - http://127.0.0.1:8000/api/token/refresh/)
 	
 		- In the body add request_token like
 		
