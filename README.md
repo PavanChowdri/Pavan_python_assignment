@@ -175,8 +175,8 @@ The **Movie collection API** is a Restful API build with Django and Django Rest 
 		
 				Authentication : Bearer <Your access token>
 		 - In response you will get message as ** Request count reset successfullt**
-     
-     	- Token_refresh ( POST - http://127.0.0.1:8000/api/token/refresh/)
+
+	- Token_refresh ( POST - http://127.0.0.1:8000/api/token/refresh/)
 	
 		- In the body add request_token like
 		
